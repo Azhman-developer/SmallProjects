@@ -71,6 +71,38 @@
             </objects>
             <point key="canvasLocation" x="1709" y="4"/>
         </scene>
+        <!--Changing Color Alpha View Controller-->
+        <scene sceneID="VFg-pJ-m99">
+            <objects>
+                <viewController storyboardIdentifier="ChangingColorAlphaViewController" id="SXk-ci-N0y" customClass="ChangingColorAlphaViewController" customModule="CADISplayLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2P-Le-Kq6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQW-gl-hyh">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9gS-qp-rtr"/>
+                                    <constraint firstAttribute="width" constant="150" id="AFu-bB-lVz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d3E-Zu-XVD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oQW-gl-hyh" firstAttribute="centerX" secondItem="z2P-Le-Kq6" secondAttribute="centerX" id="2Z7-Cx-V9V"/>
+                            <constraint firstItem="oQW-gl-hyh" firstAttribute="centerY" secondItem="z2P-Le-Kq6" secondAttribute="centerY" id="qmo-XF-c4H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circle" destination="oQW-gl-hyh" id="2df-n6-mMK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeT-Um-cBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2427" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="C6J-fY-KRS">
             <objects>

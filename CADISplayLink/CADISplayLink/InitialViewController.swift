@@ -11,7 +11,10 @@ final class InitialViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     
-    let rows = [ "Time counting animation"]
+    let rows = [
+        "Time counting animation",
+        "Changing color alpha animation"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +37,13 @@ extension InitialViewController {
 extension InitialViewController {
     
     func handleTableViewCellDidTapped(index: Int) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         switch index {
         case 0:
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyBoard.instantiateViewController(withIdentifier: "TimeCounterAnimationViewController")
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = storyBoard.instantiateViewController(withIdentifier: "ChangingColorAlphaViewController")
             navigationController?.pushViewController(vc, animated: true)
         default:
             print("Invalid Cell with index \(index)")
@@ -54,9 +60,8 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
-                
-                // Configure the cell
-                cell.textLabel?.text = rows[indexPath.row]
+        // Configure the cell
+        cell.textLabel?.text = rows[indexPath.row]
         return cell
     }
     
@@ -64,5 +69,3 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
         handleTableViewCellDidTapped(index: indexPath.row)
     }
 }
-
-

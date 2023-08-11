@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBE75CB82A850A6A00A0AC8C /* ChangingColorAlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE75CB72A850A6A00A0AC8C /* ChangingColorAlphaViewController.swift */; };
 		EBF220CB2A83D7880073D5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF220CA2A83D7880073D5B5 /* AppDelegate.swift */; };
 		EBF220CD2A83D7880073D5B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF220CC2A83D7880073D5B5 /* SceneDelegate.swift */; };
 		EBF220CF2A83D7880073D5B5 /* TimeCounterAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF220CE2A83D7880073D5B5 /* TimeCounterAnimationViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBE75CB72A850A6A00A0AC8C /* ChangingColorAlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingColorAlphaViewController.swift; sourceTree = "<group>"; };
 		EBF220C72A83D7880073D5B5 /* CADISplayLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADISplayLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF220CA2A83D7880073D5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF220CC2A83D7880073D5B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBE75CB62A850A4200A0AC8C /* ChangingColorAlphaAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EBE75CB72A850A6A00A0AC8C /* ChangingColorAlphaViewController.swift */,
+			);
+			path = ChangingColorAlphaAnimation;
+			sourceTree = "<group>";
+		};
 		EBF220BE2A83D7880073D5B5 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +72,9 @@
 				EBF220CC2A83D7880073D5B5 /* SceneDelegate.swift */,
 				EBF220DF2A83D7EF0073D5B5 /* InitialViewController.swift */,
 				EBF220E22A83D88E0073D5B5 /* StoryBoards */,
-				EBF220E12A83D7F40073D5B5 /* Resources */,
 				EBF220DE2A83D7910073D5B5 /* TimeCounterAnimation */,
+				EBE75CB62A850A4200A0AC8C /* ChangingColorAlphaAnimation */,
+				EBF220E12A83D7F40073D5B5 /* Resources */,
 			);
 			path = CADISplayLink;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF220CF2A83D7880073D5B5 /* TimeCounterAnimationViewController.swift in Sources */,
+				EBE75CB82A850A6A00A0AC8C /* ChangingColorAlphaViewController.swift in Sources */,
 				EBF220CB2A83D7880073D5B5 /* AppDelegate.swift in Sources */,
 				EBF220CD2A83D7880073D5B5 /* SceneDelegate.swift in Sources */,
 				EBF220E02A83D7EF0073D5B5 /* InitialViewController.swift in Sources */,
