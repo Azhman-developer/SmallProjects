@@ -21,7 +21,7 @@ final class ChangingColorAlphaViewController: UIViewController {
         setupDisplayLink()
     }
     
-    var value: CGFloat = 0.0
+    var alphaValue: CGFloat = 0.0
     var invert: Bool = false
 }
 
@@ -42,9 +42,9 @@ extension ChangingColorAlphaViewController {
     }
     
     @objc private func handleUpdatingCounterLabel() {
-        invert ? (value -= 1) : (value += 1)
-        circle.backgroundColor = UIColor.red.withAlphaComponent(value / 100)
-        if value > 100 || value < 0 {
+        invert ? (alphaValue -= 1) : (alphaValue += 1)
+        circle.backgroundColor = UIColor.red.withAlphaComponent(alphaValue / 100)
+        if alphaValue > 100 || alphaValue < 0 {
             invert = !invert
         }
     }
